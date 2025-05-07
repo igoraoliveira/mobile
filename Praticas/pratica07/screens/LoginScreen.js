@@ -1,7 +1,7 @@
-import { View, ScrollView, StyleSheet } from "react-native";
+import { View, ScrollView, StyleSheet, TouchableOpacity } from "react-native";
 import { TextInput, Button, Text, IconButton } from "react-native-paper";
 
-function LoginScreen() {
+function LoginScreen({ navigation }) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text variant="displaySmall" style={styles.title}>
@@ -17,10 +17,12 @@ function LoginScreen() {
       <Button mode="contained" onPress={() => {}} style={styles.input}>
         Entrar
       </Button>
-      <Text style={styles.info}>
-        Esqueceu sua senha? 
-      <Text style={styles.link}>Recuperar senha</Text>
-      </Text>
+      <View style={{ justifyContent: "center", flexDirection: "row" }}>
+        <Text style={styles.info}>Esqueceu sua senha?</Text>
+        <TouchableOpacity onPress={() => navigation.navigate("RecuperarSenha")}>
+          <Text style={styles.link}>Recuperar senha</Text>
+        </TouchableOpacity>
+      </View>
       <Text style={styles.info}>Ou entre com:</Text>
       <View style={styles.buttonContainer}>
         <IconButton icon="google" onPress={() => {}} />
