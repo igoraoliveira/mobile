@@ -3,7 +3,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import MainNavigator from "./routes/MainNavigator";
 
 function App() {
-  return(
+  return (
     <SafeAreaProvider>
       <NavigationContainer>
         <MainNavigator />
