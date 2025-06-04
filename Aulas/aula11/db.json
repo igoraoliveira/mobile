@@ -1,0 +1,24 @@
+{
+  "tarefas": [
+    {
+      "id": "1a2b",
+      "descricao": "Praticar programaçao",
+      "concluida": false
+    },
+    {
+      "id": "3c4d",
+      "descricao": "Estudar React Native",
+      "concluida": true
+    },
+    {
+      "id": "2c39",
+      "descricao": "Ola",
+      "concluida": false
+    },
+    {
+      "id": "0027",
+      "descricao": "Bater em mendigo ",
+      "concluida": false
+    }
+  ]
+}
